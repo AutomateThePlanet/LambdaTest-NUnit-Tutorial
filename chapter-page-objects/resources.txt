@@ -1,0 +1,14 @@
+Partial Classes
+https://www.automatetheplanet.com/page-objects-partial-classes-properties/
+
+Reusing Repeating Elements among many pages through Sections
+https://www.automatetheplanet.com/page-objects-partial-classes-page-sections-webdriver/
+
+Fluent Interface Design
+https://www.automatetheplanet.com/fluent-page-object-pattern/
+
+Element Access Styles
+https://www.automatetheplanet.com/page-objects-elements-access-styles/
+
+Using App Design Pattern to access pages
+https://www.automatetheplanet.com/page-objects-app-design-pattern/

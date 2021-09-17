@@ -49,11 +49,6 @@ namespace NUnitPageObjects.Version3
         public static IWebDriver Driver { get; set; }
         public static WebDriverWait WebDriverWait { get; set; }
 
-        public static void ValidateInnerTextIs(IWebElement element, string expectedText)
-        {
-            WebDriverWait.Until(ExpectedConditions.TextToBePresentInElement(element, expectedText));
-        }
-
         public static IWebElement WaitAndFindElement(By locator)
         {
             return WebDriverWait.Until(ExpectedConditions.ElementExists(locator));

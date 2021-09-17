@@ -17,6 +17,24 @@ namespace NUnitPageObjects.Version2
 
         public ProductPurchaseTests()
         {
+            ////string userName = Environment.GetEnvironmentVariable("LT_USERNAME", EnvironmentVariableTarget.Machine);
+            ////string accessKey = Environment.GetEnvironmentVariable("LT_ACCESSKEY", EnvironmentVariableTarget.Machine);
+            ////var options = new ChromeOptions();
+            ////options.BrowserVersion = "91.0";
+            ////options.AddAdditionalCapability("user", userName, true);
+            ////options.AddAdditionalCapability("accessKey", accessKey, true);
+            ////options.AddAdditionalCapability("build", "FirstSeleniumTestsInCloud", true);
+            ////options.AddAdditionalCapability("name", "AddNewBirthDayItem", true);
+            ////options.PlatformName = "Windows 10";
+
+            ////options.AddAdditionalCapability("selenium_version", "3.13.0", true);
+            ////options.AddAdditionalCapability("console", true, true);
+            ////options.AddAdditionalCapability("network", true, true);
+            ////options.AddAdditionalCapability("timezone", "UTC+03:00", true);
+
+
+            ////_driver = new RemoteWebDriver(new Uri($"https://{userName}:{accessKey}@hub.lambdatest.com/wd/hub"), options);
+
             new DriverManager().SetUpDriver(new ChromeConfig(), VersionResolveStrategy.MatchingBrowser);
             _driver = new ChromeDriver();
             _mainPage = new MainPage(_driver);

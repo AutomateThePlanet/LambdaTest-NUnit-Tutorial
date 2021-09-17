@@ -30,11 +30,6 @@ namespace NUnitPageObjects.Version1
         {
         }
 
-        protected void ValidateInnerTextIs(IWebElement element, string expectedText)
-        {
-            WebDriverWait.Until(ExpectedConditions.TextToBePresentInElement(element, expectedText));
-        }
-
         protected IWebElement WaitAndFindElement(By locator)
         {
             return WebDriverWait.Until(ExpectedConditions.ElementExists(locator));
